@@ -1,5 +1,6 @@
 import './App.css'
 import Bio from './components/Bio'
+import CursorWarpEffect from './components/CursorWarpEffect'
 import Footer from './components/Footer'
 import HeroArt from './components/HeroArt'
 import Projects from './components/Projects'
@@ -13,6 +14,7 @@ function App() {
   return (
     <>
     <div className='snap-x scroll-smooth'>
+      {/* <CursorWarpEffect /> */}
       <HeroArt />
       <Bio />
       <Projects />

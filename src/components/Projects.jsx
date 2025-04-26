@@ -31,25 +31,30 @@ function Projects() {
     ]
 
     useEffect(() => {
-        gsap.to(projectRef.current, {
-            scrollTrigger: {
-                trigger: projectRef.current,
-                start: "top bottom",    // when top of projects hits bottom of viewport
-                end: "top top",          // until projects fully cover screen
-                scrub: true,             // smooth scrubbing
-                pin: false,              // we are not pinning projects (only Bio is sticky)
-            },
-            y: "-100vh",                 // move Projects up by full height
-            ease: "none",
-        });
+
+        const ctx = gsap.context(() => {
+            gsap.to(projectRef.current, {
+                scrollTrigger: {
+                    trigger: projectRef.current,
+                    start: "top bottom",
+                    end: "top top",
+                    scrub: true,
+                    pin: false,
+                },
+                y: "-100vh",
+                ease: "none",
+            });
+        }, projectRef);
+    
+        return () => ctx.revert();
     }, []);
 
 
     return (
         <>
-        <div ref={projectRef} className="min-h-screen  flex items-center justify-center bg-cus-black snap-start">
+        <div ref={projectRef} id="projects" className="flex flex-col items-center justify-center bg-cus-black snap-start z-100 -mb-[100vh]">
         {/* <div ref={projectRef} className="relative bg-cus-black"> */}
-            <div className="flex flex-col my-40 gap-20 max-w-6xl min-w-5xl">
+            <div className="flex flex-col gap-20 max-w-6xl w-full px-6 py-40">
                 {ProjectData.map((project, index) => (
                     <ProjectComp
                         key={index}
