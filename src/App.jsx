@@ -1,4 +1,5 @@
 import './App.css'
+import Bio from './components/Bio'
 import HeroArt from './components/HeroArt'
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
   return (
     <>
       <HeroArt />
+      <Bio />
     </>
   )
 }
