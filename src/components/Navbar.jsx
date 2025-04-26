@@ -7,8 +7,9 @@ function Navbar() {
           <div className="text-2xl">
             <img src={Logo} alt="Mugdha" className="w-20"/>
           </div>
-          <ul className="flex space-x-6 text-gray-700 font-semibold">
-            <li><a href="#home" className="hover:text-indigo-500">WORK</a></li>
+          <ul className="flex space-x-12 text-gray-700 font-semibold">
+            <li><a href="#Bio" className="hover:text-indigo-500">ABOUT ME</a></li>
+            <li><a href="#projects" className="hover:text-indigo-500">WORK</a></li>
             <li><a href="#projects" className="hover:text-indigo-500">CONTACT</a></li>
           </ul>
         </div>

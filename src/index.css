@@ -9,3 +9,7 @@
     --color-cus-orange: #ED6E43;
     --color-cus-black: #1A1818;
 }
+
+html{
+    scroll-behavior: smooth;
+}

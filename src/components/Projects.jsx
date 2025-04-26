@@ -52,9 +52,9 @@ function Projects() {
 
     return (
         <>
-        <div ref={projectRef} id="projects" className="flex flex-col items-center justify-center bg-cus-black snap-start z-100 -mb-[100vh]">
+        <div ref={projectRef} id="projects" className="flex flex-col items-center justify-center bg-cus-black snap-start z-100 -mb-[100vh] relative">
         {/* <div ref={projectRef} className="relative bg-cus-black"> */}
-            <div className="flex flex-col gap-20 max-w-6xl w-full px-6 py-40">
+            <div className="flex flex-col gap-20 max-w-6xl w-full px-6 py-40 sticky">
                 {ProjectData.map((project, index) => (
                     <ProjectComp
                         key={index}

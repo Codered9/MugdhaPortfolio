@@ -8,7 +8,8 @@ export default {
       extend: {
         fontFamily: {
           syne: ['"Syne Serif"', 'serif'],
-          tans: ['"Tan-Harmoni"', 'tans']
+          tans: ['"Tan-Harmoni"', 'tans'],
+          harmoni: ['"Harmoni"', 'harmoni']
         }
       },
     },
