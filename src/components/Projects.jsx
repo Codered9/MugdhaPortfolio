@@ -1,6 +1,12 @@
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ProjectComp from "./ProjectComp"
 
+gsap.registerPlugin(ScrollTrigger);
+
 function Projects() {
+    const projectRef = useRef(null);
     const ProjectData = [
         {
             "subheading": "Oracle | Aug 2025",
@@ -23,10 +29,27 @@ function Projects() {
             "imageUrl": "./src/assets/images/figmaplugin.png"
         },
     ]
+
+    useEffect(() => {
+        gsap.to(projectRef.current, {
+            scrollTrigger: {
+                trigger: projectRef.current,
+                start: "top bottom",    // when top of projects hits bottom of viewport
+                end: "top top",          // until projects fully cover screen
+                scrub: true,             // smooth scrubbing
+                pin: false,              // we are not pinning projects (only Bio is sticky)
+            },
+            y: "-100vh",                 // move Projects up by full height
+            ease: "none",
+        });
+    }, []);
+
+
     return (
         <>
-        <div className="min-h-screen  flex items-center justify-center bg-cus-black snap-start">
-            <div className="flex flex-col my-40 gap-20 max-w-5xl">
+        <div ref={projectRef} className="min-h-screen  flex items-center justify-center bg-cus-black snap-start">
+        {/* <div ref={projectRef} className="relative bg-cus-black"> */}
+            <div className="flex flex-col my-40 gap-20 max-w-6xl min-w-5xl">
                 {ProjectData.map((project, index) => (
                     <ProjectComp
                         key={index}
