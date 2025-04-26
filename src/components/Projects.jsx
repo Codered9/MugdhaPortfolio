@@ -25,7 +25,7 @@ function Projects() {
     ]
     return (
         <>
-        <div className="min-h-screen  flex items-center justify-center bg-cus-black">
+        <div className="min-h-screen  flex items-center justify-center bg-cus-black snap-start">
             <div className="flex flex-col my-40 gap-20 max-w-5xl">
                 {ProjectData.map((project, index) => (
                     <ProjectComp

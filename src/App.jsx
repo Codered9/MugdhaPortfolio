@@ -8,10 +8,12 @@ function App() {
 
   return (
     <>
+    <div className='snap-x scroll-smooth'>
       <HeroArt />
       <Bio />
       <Projects />
       <Footer />
+    </div>
     </>
   )
 }
