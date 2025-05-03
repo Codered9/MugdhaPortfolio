@@ -13,3 +13,8 @@
 html{
     scroll-behavior: smooth;
 }
+
+.sticky-toggle{
+    position: sticky;
+    top: 0;
+}
