@@ -4,8 +4,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-function Bio() {
-    const bioRef = useRef(null);
+function Bio(bioRef) {
+//    const bioRef = useRef(null);
 
     useEffect(() => {
         gsap.to(bioRef.current, {

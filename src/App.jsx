@@ -7,16 +7,20 @@ import Projects from "./components/Projects";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SmoothScoll from "./components/SmoothScroll";
+import BackgroundLines from "./components/BackgroundLines";
 
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
+  const bioRef = useRef(null);
+
   return (
     <>
     <SmoothScoll>
-      <div className="" id="smooth-wrapper scroll-smooth">
+      <div className="">
+          <BackgroundLines bioRef={bioRef}/>
           <HeroArt />
-          <Bio />
+          <Bio bioRef={bioRef}/>
           <Projects />
           <Footer />
         </div>
