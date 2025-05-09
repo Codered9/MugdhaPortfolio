@@ -4,12 +4,12 @@ function HeroArt() {
 
 
   return (
-    <div className="h-screen  flex items-center justify-center bg-[#F7F1E0]">
+    <div className="h-screen  flex items-center justify-center ">
       {/* Main Content */}
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-row -mb-12">
           <p 
-          className="text-[300px] leading-none font-medium font-tans text-cus-orange">HELLO</p>
+          className="text-[330px] leading-none font-medium font-tans text-cus-orange">HELLO</p>
           <img src={UiUxTag} alt="Tag" className="h-48 ml-16 mt-8" />
         </div>{" "}
         {/*HELLO and Tag */}
@@ -17,7 +17,7 @@ function HeroArt() {
           {" "}
           {/* I'm Mugdha*/}
           <p 
-          className="font-medium font-tans text-cus-orange text-[300px] leading-none">I'M MUGDHA</p>
+          className="font-medium font-tans text-cus-orange text-[330px] leading-none">I'M MUGDHA</p>
         </div>
         <div>
           {" "}

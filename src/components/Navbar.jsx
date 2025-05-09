@@ -2,8 +2,8 @@ import Logo from "../assets/images/Logo.svg"
 
 function Navbar() {
     return (
-        <nav className="fixed top-0 left-0 right-0 z-10 w-full">
-        <div className="max-w-7xl mx-auto flex justify-between items-center p-6 font-syne font-bold">
+        <nav className="fixed top-0 left-0 right-0 z-200 w-full">
+        <div className="w-7xl mx-auto flex justify-between items-center pt-4 font-syne font-bold">
           <div className="text-2xl">
             <img src={Logo} alt="Mugdha" className="w-20"/>
           </div>
