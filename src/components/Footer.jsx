@@ -1,15 +1,19 @@
 function Footer() {
-    return (
-        <>
-        <div className="h-screen text-4xl font-syne font-semibold flex items-center justify-center snap-start bg-cus-white">
-            <div className="w-5xl text-left">
-            <p className="text-2xl max-w-xl">
-            Away from pixels and user flows, you’ll probably find me planning my next trip before the current one even ends, lacing up my running shoes to clear my head, or diving into something wonderfully random—shaping tiny clay figurines, playing a new board or card game, or exploring whatever new fascination catches my eye.
-            </p>
-            </div>
+  return (
+    <>
+      <div className="h-screen text-4xl font-syne font-semibold flex items-center justify-center snap-start bg-cus-black">
+        <div className="w-7xl text-left relative">
+          <p className="text-[200px] font-medium font-tans text-cus-orange">
+            Soooo,
+          </p>
+          <p className="text-[200px] font-medium font-tans text-cus-orange ">
+            What's Next?
+          </p>
+          <img src="./src/assets/images/Eyes.png" alt="Eyes" className="h-20 absolute top-0 right-0" />
         </div>
-        </>
-    )
+      </div>
+    </>
+  );
 }
 
-export default Footer
+export default Footer;

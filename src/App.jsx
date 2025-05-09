@@ -8,6 +8,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SmoothScoll from "./components/SmoothScroll";
 import BackgroundLines from "./components/BackgroundLines";
+import MiniProject from "./components/MiniProjects";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -22,6 +23,7 @@ function App() {
           <HeroArt />
           <Bio bioRef={bioRef}/>
           <Projects />
+          <MiniProject />
           <Footer />
         </div>
     </SmoothScoll>

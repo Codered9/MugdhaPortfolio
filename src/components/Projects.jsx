@@ -54,7 +54,7 @@ function Projects() {
 
         <div className="max-w-7xl">
             <p className="text-[200px] font-medium font-tans text-cus-orange mt-40">SELECTED WORK</p>
-            <p className="text-6xl text-cus-white text-center font-syne font-medium -mt-12">Throughtful. Intentional. Human</p>
+            <p className="text-6xl text-cus-white text-center font-syne font-medium">Throughtful. Intentional. Human</p>
           <div className="flex flex-col gap-20 w-full my-48 sticky">
             {ProjectData.map((project, index) => (
               <ProjectComp
