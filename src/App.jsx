@@ -13,15 +13,14 @@ import MiniProject from "./components/MiniProjects";
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
-  const bioRef = useRef(null);
 
   return (
     <>
     <SmoothScoll>
       <div className="">
-          <BackgroundLines bioRef={bioRef}/>
+          <BackgroundLines/>
           <HeroArt />
-          <Bio bioRef={bioRef}/>
+          <Bio />
           <Projects />
           <MiniProject />
           <Footer />

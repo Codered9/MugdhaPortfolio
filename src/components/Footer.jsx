@@ -1,3 +1,5 @@
+import Eyes from "./Eyes";
+
 function Footer() {
   return (
     <>
@@ -9,7 +11,10 @@ function Footer() {
           <p className="text-[200px] font-medium font-tans text-cus-orange ">
             What's Next?
           </p>
-          <img src="./src/assets/images/Eyes.png" alt="Eyes" className="h-20 absolute top-0 right-0" />
+          {/* <img src="./src/assets/images/Eyes.png" alt="Eyes"  /> */}
+          <div className="h-80 absolute top-0 right-0">
+            <Eyes />
+          </div>
         </div>
       </div>
     </>
