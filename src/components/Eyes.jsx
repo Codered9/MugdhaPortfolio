@@ -9,6 +9,7 @@ const Eyes = () => {
     useEffect(() => {
       const svg = svgRef.current;
       const mouse = svg.createSVGPoint();
+      let lastAngle = 0
 
       const createEye = (element) => {
         gsap.set(element, {
@@ -20,14 +21,29 @@ const Eyes = () => {
         const centerY = bbox.y + bbox.height / 2;
 
         const rotateTo = (point) => {
-          const dx = point.x - centerX;
-          const dy = point.y - centerY;
-          const angle = Math.atan2(dy, dx);
-          gsap.to(element, {
-            duration: 0.3,
-            rotation: `${angle}_rad_short`,
-          });
-        };
+            const dx = point.x - centerX;
+            const dy = point.y - centerY;
+            let angle = Math.atan2(dy, dx);
+          
+            // Convert from radians to degrees
+            let angleDeg = angle * (180 / Math.PI);
+            let lastAngleDeg = lastAngle * (180 / Math.PI);
+          
+            // Normalize angles to avoid spinning
+            let delta = angleDeg - lastAngleDeg;
+            if (delta > 180) angleDeg -= 360;
+            else if (delta < -180) angleDeg += 360;
+          
+            // Animate with actual degree value
+            gsap.to(element, {
+              duration: 0.3,
+              rotation: angleDeg,
+              transformOrigin: "50% 50%",
+            });
+          
+            // Update lastAngle
+            lastAngle = angle;
+          };
 
         return { element, rotateTo };
       };
@@ -64,7 +80,7 @@ const Eyes = () => {
       ref={svgRef}
       viewBox="0 0 1000 1000"
     //   className="fixed w-full h-full pointer-events-none"
-      className="w-[1000px] h-[1000px] pointer-events-none"
+      className="h-full w-full pointer-events-none"
     >
       <g ref={leftEyeRef}>
         <circle
@@ -73,7 +89,7 @@ const Eyes = () => {
           r="100"
           className="fill-cus-white stroke-cus-white stroke-[1]"
         />
-        <circle cx="465" cy="500" r="35" className="fill-black" />
+        <circle cx="445" cy="500" r="55" className="fill-cus-black" />
       </g>
 
       <g ref={rightEyeRef}>
@@ -83,7 +99,7 @@ const Eyes = () => {
           r="100"
           className="fill-cus-white stroke-cus-white stroke-[1]"
         />
-        <circle cx="665" cy="500" r="35" className="fill-black" />
+        <circle cx="645" cy="500" r="55" className="fill-cus-black" />
       </g>
     </svg>
   );
