@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import Logo from "../assets/images/Logo.svg";
 
 function Navbar() {
@@ -5,7 +6,9 @@ function Navbar() {
     <nav className="fixed top-0 left-0 right-0  w-full z-999">
       <div className="w-7xl mx-auto flex justify-between items-center pt-4 font-syne font-bold mix-blend-difference text-cus-black">
         <div className="text-2xl">
+          <Link to="/">
           <img src={Logo} alt="Mugdha" className="w-20" />
+          </Link>
         </div>
         <ul className="flex space-x-12 font-semibold">
           <li>

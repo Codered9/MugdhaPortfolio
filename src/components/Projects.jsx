@@ -12,16 +12,19 @@ function Projects() {
       subheading: "Oracle | Aug 2025",
       heading: "Entitlements",
       imageUrl: "./src/assets/images/Entitlements.png",
+      url: '/projects/Entitlements'
     },
     {
       subheading: "Tekion | Jan 2024",
       heading: "Search",
       imageUrl: "./src/assets/images/Search.png",
+      url: '/projects/Search'
     },
     {
       subheading: "Samsung | Aug 2025",
       heading: "Parts Purchase Order",
       imageUrl: "./src/assets/images/PartsPurchasedOrder.png",
+      url: '/projects/PurchaseOrder'
     },
   ];
 
@@ -62,6 +65,7 @@ function Projects() {
                 subheading={project.subheading}
                 heading={project.heading}
                 imageUrl={project.imageUrl}
+                url={project.url}
               />
             ))}
           </div>
