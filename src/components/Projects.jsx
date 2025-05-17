@@ -11,17 +11,17 @@ function Projects() {
     {
       subheading: "Oracle | Aug 2025",
       heading: "Entitlements",
-      imageUrl: "./src/assets/images/oracle.png",
+      imageUrl: "./src/assets/images/Entitlements.png",
     },
     {
       subheading: "Tekion | Jan 2024",
       heading: "Search",
-      imageUrl: "./src/assets/images/purchaseorder.png",
+      imageUrl: "./src/assets/images/Search.png",
     },
     {
       subheading: "Samsung | Aug 2025",
       heading: "Parts Purchase Order",
-      imageUrl: "./src/assets/images/communication.png",
+      imageUrl: "./src/assets/images/PartsPurchasedOrder.png",
     },
   ];
 

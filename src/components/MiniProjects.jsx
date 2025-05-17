@@ -6,9 +6,9 @@ function MiniProject () {
             <div className="bg-cus-white">
                 <div className="mx-auto w-[1px] bg-cus-black h-44"></div>
                 <p className="text-6xl text-cus-orange text-center font-syne font-medium my-16">Mini Projects</p>
-                <div className="flex mx-auto gap-16 justify-center">
-                    <img src='/src/assets/images/miniProject.png' className="w-100 h-100" />
-                    <img src='./src/assets/images/miniProject.png' className="w-100 h-100" />
+                <div className="grid grid-cols-2 mx-auto gap-16 max-w-7xl justify-center">
+                    <img src='/src/assets/images/miniProject.png' className="w-full" />
+                    <img src='./src/assets/images/miniProject.png' className="w-full" />
                 </div>
                 <div className="mx-auto my-12 w-[1px] bg-cus-black h-44 "></div>
                 <p className="text-5xl/16 font-syne font-semibold max-w-7xl mx-auto pb-40">

@@ -79,7 +79,6 @@ const Eyes = () => {
     <svg
       ref={svgRef}
       viewBox="0 0 1000 1000"
-    //   className="fixed w-full h-full pointer-events-none"
       className="h-full w-full pointer-events-none"
     >
       <g ref={leftEyeRef}>
