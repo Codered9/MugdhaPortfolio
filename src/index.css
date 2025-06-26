@@ -19,6 +19,11 @@ html{
     top: 0;
 }
 
+.sticky-heading{
+    position: sticky;
+    top: 20;
+}
+
 body{
     overflow-x: hidden;
     background-color: #F9F6F0;

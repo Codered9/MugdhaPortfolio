@@ -9,7 +9,7 @@ function Bio() {
             scrollTrigger: {
                 trigger: bioRef.current,
                 start: "top bottom",
-                end: "bottom center",
+                end: "bottom top",
                 scrub: true,
                 toggleClass: { targets: bioRef.current, className: "sticky-toggle"}
             },

@@ -27,10 +27,11 @@ const Eyes = () => {
           
             // Convert from radians to degrees
             let angleDeg = angle * (180 / Math.PI);
+            // console.log(angleDeg)
             let lastAngleDeg = lastAngle * (180 / Math.PI);
           
             // Normalize angles to avoid spinning
-            let delta = angleDeg - lastAngleDeg;
+            let delta = angleDeg - Math.abs(lastAngleDeg);
             if (delta > 180) angleDeg -= 360;
             else if (delta < -180) angleDeg += 360;
           
