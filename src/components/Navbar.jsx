@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import Logo from "../assets/images/Logo.svg";
+import Logo from "/Logo.svg";
 
 function Navbar() {
   return (

@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText"; // Ensure you have access to this plugin
-import UiUxTag from "../assets/uiuxtag.svg";
+import UiUxTag from "/uiuxtag.svg";
 
 gsap.registerPlugin(SplitText);
 

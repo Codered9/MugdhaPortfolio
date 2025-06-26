@@ -11,19 +11,19 @@ function Projects() {
     {
       subheading: "Oracle | Aug 2025",
       heading: "Entitlements",
-      imageUrl: "./src/assets/images/Entitlements.png",
+      imageUrl: "/Entitlements.png",
       url: "/projects/Entitlements",
     },
     {
       subheading: "Tekion | Jan 2024",
       heading: "Search",
-      imageUrl: "./src/assets/images/Search.png",
+      imageUrl: "/Search.png",
       url: "/projects/Search",
     },
     {
       subheading: "Samsung | Aug 2025",
       heading: "Parts Purchase Order",
-      imageUrl: "./src/assets/images/PartsPurchasedOrder.png",
+      imageUrl: "/PartsPurchasedOrder.png",
       url: "/projects/PurchaseOrder",
     },
   ];

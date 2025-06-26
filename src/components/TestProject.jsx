@@ -1,5 +1,4 @@
 function TestProject() {
-  const url = "./src/assets/images/Search.png";
   return (
     <>
       <div className="bg-cus-white">
