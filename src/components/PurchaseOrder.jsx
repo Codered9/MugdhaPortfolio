@@ -156,7 +156,7 @@ function PurchaseOrder() {
                     </p>
                   </div>
                   <img
-                    src="/src/assets/images/purchaseorder_asset1.png"
+                    src="/purchaseorder_asset1.png"
                     alt="Random Image"
                     className="w-full h-auto my-16"
                   />
@@ -200,7 +200,7 @@ function PurchaseOrder() {
               <div className="grid grid-cols-2 gap-12 my-16">
                 <div>
                   <img
-                    src="/src/assets/images/purchaseorder_asset2.png"
+                    src="/purchaseorder_asset2.png"
                     alt="Random Image"
                     className="w-full"
                   />
@@ -237,7 +237,7 @@ function PurchaseOrder() {
                 <div className="grid grid-cols-3 gap-6 mt-8">
                   <div>
                     <img
-                      src="/src/assets/images/forusers.png"
+                      src="/forusers.png"
                       alt="For users"
                       className="w-full"
                     />
@@ -249,7 +249,7 @@ function PurchaseOrder() {
                   </div>
                   <div>
                     <img
-                      src="/src/assets/images/forsystem.png"
+                      src="/forsystem.png"
                       alt="For System"
                       className="w-full"
                     />
@@ -261,7 +261,7 @@ function PurchaseOrder() {
                   </div>
                   <div>
                     <img
-                      src="/src/assets/images/fordealership.png"
+                      src="/fordealership.png"
                       alt="For Dealership"
                       className="w-full"
                     />
@@ -293,7 +293,7 @@ function PurchaseOrder() {
                   and collaborating with the product and engineering teams.
                 </p>
                 <div className="mt-8 ml-8">
-                  <ul className="list-image-[url(/src/assets/images/star.svg)] text-2xl">
+                  <ul className="list-image-[url(/star.svg)] text-2xl">
                     <li className="mt-4 pl-2">
                       <span className="font-semibold">System Deep Dive:</span>{" "}
                       Mapped the entire PO journey across 5+ PO types through
@@ -346,7 +346,7 @@ function PurchaseOrder() {
                   <span className="text-cus-orange">System</span>
                 </h1>
                 <img
-                  src="/src/assets/images/SystemCar.png"
+                  src="/SystemCar.png"
                   alt="Random Image"
                   className="w-full h-auto mt-16"
                 />
@@ -417,7 +417,7 @@ function PurchaseOrder() {
                 <div className="grid grid-cols-3 gap-6 mt-8">
                   <div>
                     <img
-                      src="/src/assets/images/users1.png"
+                      src="/users1.png"
                       alt="Parts Manager"
                       className="w-full"
                     />
@@ -432,7 +432,7 @@ function PurchaseOrder() {
                   </div>
                   <div>
                     <img
-                      src="/src/assets/images/users2.png"
+                      src="/users2.png"
                       alt="For System"
                       className="w-full"
                     />
@@ -450,7 +450,7 @@ function PurchaseOrder() {
                   </div>
                   <div>
                     <img
-                      src="/src/assets/images/users3.png"
+                      src="/users3.png"
                       alt="For Dealership"
                       className="w-full"
                     />
