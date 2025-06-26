@@ -25,12 +25,12 @@ function BackgroundLines() {
   return (
     <div
       ref={linesContainerRef}
-      className="fixed flex top-0 z-10 inset-0 pointer-events-none overflow-hidden"
+      className="fixed flex top-0 inset-0 pointer-events-none overflow-hidden -z-100"
     >
       {Array.from({ length: 15 }).map((_, i) => (
         <div
           key={i}
-          className="h-full border-l-1 border-cus-orange grow-3"
+          className="h-full border-l-1 border-cus-blackk grow-3 opacity-20"
           // style={{
           //   left: `${(i / 14) * 100}%`,
           // }}
